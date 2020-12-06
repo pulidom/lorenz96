@@ -7,16 +7,18 @@
 - Works with ensemble if the input is an ensemble
 
 ### Equations
-L96
+
+L96 system:
 
 $$d_t X_k = - X_{k-1} (X_{k-2} - X_{k+1} ) - X_k + F$$
 
-L96 two scale
+L96 two scale system:
 
 $$d_t X_k = - X_{k-1}  (X_{k-2} - X_{k+1} ) - X_k + F - h*c/b * sum Y_j$$
+
 $$d_t Y_j = - c b Y_{j+1}  (Y_{j+2} - X_{j-1} ) - c Y_j + h*c/b * X_int(j-1)/J$$
 
-See reference for further details on L96 system.
+See reference for further details on L96 systems.
 
 ### Callable functions: 
    integ and initialization
